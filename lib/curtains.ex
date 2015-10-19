@@ -2,11 +2,10 @@ defmodule Curtains do
   import Plug.Conn
 
   def init(_opts) do
-    IO.puts "path:"
-    IO.puts Application.get_env(:curtains, :curtain_file)
   end
 
-  def call(conn, file) do
+  def call(conn, _opts) do
+    file = Application.get_env(:curtains, :curtain_file)
     case File.read(file) do
       {:ok, binary } ->
         conn
