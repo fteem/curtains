@@ -1,0 +1,2 @@
+defmodule Curtains do
+end
