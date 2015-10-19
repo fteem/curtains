@@ -4,6 +4,7 @@ defmodule Curtains do
   def init(_opts) do
     IO.puts "HERE!"
     IO.puts Application.get_env(:curtains, :curtain)
+    IO.puts Application.get_all_env(:rumbl)
   end
 
   def call(conn, file) do
