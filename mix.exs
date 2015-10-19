@@ -9,7 +9,6 @@ defmodule Curtains.Mixfile do
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps,
-      curtain: "curtains.html"
     ]
   end
 
@@ -17,7 +16,10 @@ defmodule Curtains.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [
+      applications: [:logger],
+      env: [ curtain: "curtains.html" ]
+    ]
   end
 
   # Dependencies can be Hex packages:
