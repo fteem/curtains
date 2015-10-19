@@ -18,7 +18,7 @@ defmodule Curtains.Mixfile do
   def application do
     [
       applications: [:logger],
-      env: [curtain: "curtains.html"]
+      env: [curtain_file: "curtains.html"]
     ]
   end
 

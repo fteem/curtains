@@ -2,8 +2,7 @@ defmodule Curtains do
   import Plug.Conn
 
   def init(_opts) do
-    IO.puts "HERE!"
-    IO.puts Application.get_all_env(:curtains)
+    Application.get_env(:curtains, :curtain_file)
   end
 
   def call(conn, file) do
