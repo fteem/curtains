@@ -2,7 +2,7 @@ defmodule Curtains do
   import Plug.Conn
 
   def init(_opts) do
-    Application.get_env(:curtains, :file_path)
+    Application.get_env(:curtains, :file_path) || "curtains.html"
   end
 
   def call(conn, file) do
