@@ -60,6 +60,11 @@ config :curtains, curtain_file: "/path/to/any/file.html"
 
 Make sure you restart your application after changing the config.
 
+## Using static assets in the curtain page
+
+Make sure that the **host** application is serving the static assets you 
+want to use on the curtain HTML page.
+
 ## Contributing
 
 1. Fork it
