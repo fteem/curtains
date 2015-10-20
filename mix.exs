@@ -18,7 +18,7 @@ defmodule Curtains.Mixfile do
   def application do
     [
       applications: [:logger],
-      env: [curtain_file: Path.join(["deps", "curtains", "curtains.html"])]
+      env: [curtain_file: Path.join([Mix.Project.app_path, "curtains.html"])]
     ]
   end
 
