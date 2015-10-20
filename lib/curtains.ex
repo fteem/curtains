@@ -5,7 +5,7 @@ defmodule Curtains do
   end
 
   def call(conn, _opts) do
-    file = IO.puts(Application.get_env(:curtains, :curtain_file))
+    file = Application.get_env(:curtains, :curtain_file)
     case File.read(file) do
       {:ok, binary } ->
         conn
