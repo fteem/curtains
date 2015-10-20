@@ -21,11 +21,9 @@ The package can be installed as:
 
   3. Run ```mix deps.get```
 
-  4. Profit.
-
 ## Usage
 
-Add the Curtains to your desired pipeline in the router. For example:
+Add ```Curtains``` to your desired pipeline in the router. For example:
 
 ```elixir
 defmodule MyApp.Router do
@@ -47,7 +45,7 @@ end
 Curtains will take over any browser requests coming to the application and will
 display the default Curtains page:
 
-![Curtains][http://imgreview.com/i/gVLvB?w=1920]
+![Curtains](http://imgreview.com/i/gVLvB?w=1920)
 
 ## Changing the default curtain
 
