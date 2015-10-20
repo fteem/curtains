@@ -1,7 +1,10 @@
 # Curtains
 
-Curtains is a Elixir package that "takes over" your Elixir website. It's made for 
-"Under construction" and "Maintenance" pages in mind. At it's heart, it's just a Plug.
+**Please note, this is still in development.**
+
+Curtains is a Elixir package that "takes over" your Elixir website by returning 
+content of a specified file (if it exists). This makes it perfect for "Under construction" 
+and "Maintenance" pages. At it's heart, it's just a Plug.
 
 ## Installation
 
@@ -42,8 +45,8 @@ defmodule MyApp.Router do
 end
 ```
 
-Curtains will take over any browser requests coming to the application and will
-display the default Curtains page:
+With this config, Curtains will take over any browser requests coming to the 
+application and will display the default Curtains page:
 
 ![Curtains](http://imgreview.com/i/gVLvB?w=1920)
 
