@@ -9,7 +9,8 @@ defmodule Curtains.Mixfile do
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps,
-      package: package
+      package: package,
+      description: description
     ]
   end
 
@@ -47,5 +48,11 @@ defmodule Curtains.Mixfile do
      licenses: ["Apache 2.0"],
      links: %{"GitHub" => "https://github.com/fteem/curtains",
               "Docs" => "http://hexdocs.pm/curtains"}]
+  end
+
+  defp description do
+    """
+    Curtains is a Elixir package that "takes over" your Elixir website by returning content of a specified file (if it exists). This makes it perfect for "Under construction" and "Maintenance" pages. At it's heart, it's just a Plug.
+    """
   end
 end
