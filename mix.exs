@@ -9,6 +9,7 @@ defmodule Curtains.Mixfile do
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps,
+      package: package
     ]
   end
 
@@ -33,7 +34,18 @@ defmodule Curtains.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:plug, "~> 1.0.2"} 
+      {:plug, "~> 1.0.2"},
+      {:earmark, "~> 0.1", only: :dev},
+      {:ex_doc, "~> 0.10", only: :dev}
     ]
+  end
+
+  defp package do
+    [# These are the default files included in the package
+     files: ["lib", "mix.exs", "README*", "LICENSE", "public"],
+     maintainers: ["Ilija Eftimov"],
+     licenses: ["Apache 2.0"],
+     links: %{"GitHub" => "https://github.com/fteem/curtains",
+              "Docs" => "http://hexdocs.pm/curtains"}]
   end
 end

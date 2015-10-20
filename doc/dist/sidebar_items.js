@@ -1,0 +1,1 @@
+sidebarNodes={"exceptions":[],"extras":[{"id":"extra-api-reference","title":"API Reference","headers":[]}],"modules":[{"id":"Curtains","title":"Curtains","functions":[{"id":"call/2","anchor":"call/2"},{"id":"init/1","anchor":"init/1"}]}],"protocols":[]}
