@@ -1,8 +1,5 @@
 defmodule Curtains do
-  use Plug.Builder
   import Plug.Conn
-
-  plug Plug.Static, at: "/public", from: :curtains
 
   def init(_opts) do
   end
